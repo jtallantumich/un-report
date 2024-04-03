@@ -14,3 +14,5 @@ ggplot(data = gapminder_data)+
   labs(x = "GDP Per Capita", y = "Life Expectancy", color= "Continent", size="Population (in millions)")+
   theme_classic()
 ggsave("gdp_percap.pdf")
+
+
