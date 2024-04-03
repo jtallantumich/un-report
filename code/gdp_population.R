@@ -113,4 +113,5 @@ gapminder_Americas_2007 <- gapminder_co2 %>%
   filter(continent == "Americas" & year == "2007") %>% 
   mutate(region = ifelse(country == "United States" | country == "Canada" | country =="Mexico", "north", "south")) #%>%
 
-gapminder_Americas_2007
+#write out new clean dataset as scv
+write_csv(gapminder_Americas_2007, "data/gapminder_co2.csv")
